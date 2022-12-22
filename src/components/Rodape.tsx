@@ -1,6 +1,8 @@
- import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
+import './Rodape.css'
 import { useListaDeParticipantes } from "../state/hook/useListaDeParticipantes"
+
 
 const Rodape = () => {
 
@@ -12,11 +14,10 @@ const Rodape = () => {
         navegarPara('/sorteio')
     }
 
-    return (
-        <footer>
-            <button disabled={participantes.length < 3} onClick={iniciar}>Iniciar brincadeira</button>
-        </footer>
-    )
+    return (<footer className="rodape-configuracoes">
+        <button className="botao" disabled={participantes.length < 3} onClick={iniciar}>Iniciar brincadeira</button>
+        <img src="/imagens/sacolas.png" alt="Sacolas de compras" />
+    </footer>)
 }
 
 export default Rodape
