@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router";
 import { BrowserRouter } from "react-router-dom";
 import { RecoilRoot } from "recoil";
 
-import Formulario from "./componentes/Formulario";
+import Formulario from "./components/Formulario";
 
 function App() {
   return (
